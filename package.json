@@ -1,6 +1,6 @@
 {
   "name": "quiz",
-  "homepage": "https://GusevaAng.github.io/quiz",
+  "homepage": "https://gusevaang.github.io/quiz",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,6 +23,7 @@
     "react-use": "^17.5.1",
     "sass": "^1.77.8",
     "sass-loader": "^16.0.1",
+    "serve": "^14.2.3",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -31,8 +32,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build", 
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start-build": "./node_modules/serve/build/main.js  -s build"
   },
   "eslintConfig": {
     "extends": [
