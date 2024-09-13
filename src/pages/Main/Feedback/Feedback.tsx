@@ -2,7 +2,6 @@ import React from 'react'
 import styles from './Feedback.module.scss'
 import FeedbackForm from './FeedbackForm/FeedbackForm'
 
-
 const Feedback: React.FC = () => {
 
     // @TODO имитация отправки обратной связи
