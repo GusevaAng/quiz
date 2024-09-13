@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/quiz/static/css/main.1ad77a42.css",
+    "main.js": "/quiz/static/js/main.9a14e27c.js",
+    "static/media/finish.jpg": "/quiz/static/media/finish.9a18eeb776697e9be2b8.jpg",
+    "static/media/ellipse.png": "/quiz/static/media/ellipse.8b8bc715aae88cce484e.png",
+    "static/media/footer.png": "/quiz/static/media/footer.334e8074d3ed678d909d.png",
+    "static/media/quiz-round-first.jpg": "/quiz/static/media/quiz-round-first.00f44ac80a9be5533ae8.jpg",
+    "static/media/welcome.png": "/quiz/static/media/welcome.0f235363dcc426336cf2.png",
+    "static/media/rules2.png": "/quiz/static/media/rules2.47116921fb5706400d89.png",
+    "static/media/rules3.png": "/quiz/static/media/rules3.a59c3ec5dedd75c3eb1d.png",
+    "static/media/welcome-mini1.png": "/quiz/static/media/welcome-mini1.4a59a61d95502a1a45a6.png",
+    "static/media/rules1.png": "/quiz/static/media/rules1.162ec5257fa6ef8661fc.png",
+    "static/media/welcome-mini2.png": "/quiz/static/media/welcome-mini2.2bb21b5be1697da280be.png",
+    "static/media/rules4.png": "/quiz/static/media/rules4.4f08dbd1e3c384523516.png",
+    "static/media/logo-white.png": "/quiz/static/media/logo-white.cb1282fe740113aa77f6.png",
+    "index.html": "/quiz/index.html",
+    "main.1ad77a42.css.map": "/quiz/static/css/main.1ad77a42.css.map",
+    "main.9a14e27c.js.map": "/quiz/static/js/main.9a14e27c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ad77a42.css",
+    "static/js/main.9a14e27c.js"
+  ]
+}
