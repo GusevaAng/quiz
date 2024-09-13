@@ -1,0 +1,96 @@
+@import '../../../../styles/variables';
+
+
+
+.container {
+    margin: 0 60px ;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    
+
+    .form {
+        display: grid;
+        grid-template-columns: 11fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "email button"
+            "feedback button";
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+
+        .email {
+            grid-area: email;
+            height: 25px;
+            font-family: $main-font;
+            font-size: 16px;
+            color: $main-font-color;
+            background: $translucent-field;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 3px 5px #ffffff55;
+            border: none;
+            border-radius: 10px;
+
+            &::placeholder {
+                padding-left: 10px;
+                color: $secondary-font-color;
+            }
+
+            &:-webkit-autofill,
+            &:-webkit-autofill:hover,
+            &:-webkit-autofill:focus,
+            &:-webkit-autofill:active {
+                border-radius: 10px;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: $secondary-font-color;
+                background-color: $translucent-field;
+                backdrop-filter: blur(7px);
+                box-shadow: 0 3px 5px #ffffff55;
+                font-size: 16px;
+            }
+        }
+
+        .feedback {
+            grid-area: feedback;
+            height: 45px;
+            font-family: $main-font;
+            font-size: 16px;
+            color: $main-font-color;
+            background: $translucent-field;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 3px 5px #ffffff55;
+            border: none;
+            border-radius: 10px;
+
+            &::placeholder {
+                padding-left: 10px;
+                color: $secondary-font-color;
+            }
+
+            &:-webkit-autofill,
+            &:-webkit-autofill:hover,
+            &:-webkit-autofill:focus,
+            &:-webkit-autofill:active {
+                border-radius: 10px;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: $secondary-font-color;
+                background-color: $translucent-field;
+                backdrop-filter: blur(7px);
+                box-shadow: 0 3px 5px #ffffff55;
+                font-size: 16px;
+            }
+        }
+
+        @import '../../../../styles/buttons';
+
+        .imageButton {
+            grid-area: button;
+            margin: 10px;
+
+            .arrowButton {
+                width: 35px;
+                z-index: 2;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import '../../../styles/variables';
+
+
+.container {
+    padding: 10px;
+
+    .question {
+        text-align: center;
+        font-family: $main-font;
+        font-size: 53px;
+        color: $quiz-text-color;
+    }
+
+    .timer {
+        position: absolute;
+        bottom: 8%;
+        left: 2%;
+        right: 2%;
+        text-align: center;
+        font-family: $accent-font;
+        font-size: 18px;
+        color: $accent-font-color-pink;
+    }
+}

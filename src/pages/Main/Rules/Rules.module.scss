@@ -1,0 +1,64 @@
+@import '../../../styles/variables';
+
+.container {
+    margin: 30px 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 620px);
+    grid-template-rows: repeat(2, 300px);
+    gap: 60px;
+    justify-content: space-between;
+    align-items: stretch;
+
+
+    .card {
+        padding: 40px;
+        background: $blur-effect-blue;
+        backdrop-filter: blur(7px);
+        box-shadow: 0 4px 30px #ffffff2b;
+        border-radius: 25px;
+        z-index: 2;
+
+        .title {
+            margin: 25px 0;
+            font-family: $accent-font;
+            font-size: 26px;
+            line-height: 110%;
+            color: $main-font-color;
+        }
+
+        .description {
+            margin: 15px 0;
+            width: 420px;
+            font-family: $main-font;
+            font-size: 20px;
+            line-height: 105%;
+            color: $secondary-font-color;
+        }
+
+        .imageOne {
+            position: absolute;
+            left: 64%;
+            top: 30%;
+            transform: scale(-1, 1) rotate(20deg);
+        }
+
+        .imageTwo {
+            position: absolute;
+            left: 60%;
+            top: 13%;
+        }
+
+        .imageThree {
+            position: absolute;
+            left: 70%;
+            top: 40%;
+        }
+
+        .imageFour {
+            position: absolute;
+            left: 64%;
+            top: 30%;
+            transform: scale(-1, 1) rotate(-15deg);
+        }
+    }
+}

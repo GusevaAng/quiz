@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@100..900&family=Russo+One&display=swap');
+
+// Общие стили
+
+
+
+// шрифты:
+$main-font: 'PT Sans', sant-serif;
+$accent-font: 'Russo One', sant-serif;
+
+
+// цвета:
+
+// фон:
+$main-background: linear-gradient(to top, #280054 , #340054, #1b003e);      // основной фон
+$footer-background: #1b003e;                                                    // фон подвала
+$background-blue: #49cbf4;                                                      // фон голубой
+$background-pink: #f4499f;                                                      // фон розовый
+$blur-effect-blue: #0f003e5f;                                                   // размытие голубой
+$blur-effect-pink: #f4499f5f;                                                   // размытие розовый
+$glare-blue: radial-gradient(60% 50% at right, #04c4ff9f, #ffffff00);         // блик голубой
+$glare-pink: radial-gradient(50% 40% at left, #f4499f63, #ffffff00);          // блик розовый
+$translucent-field: #ffffff29;                                                  // полупрозрачный фон
+$white-background: #ffffff70;
+
+// текст:
+$main-font-color: #ffffff;
+$accent-font-color-blue: #49cbf4;
+$accent-font-color-pink: #f4499f;
+$secondary-font-color: #ffffff9a;
+$quiz-text-color: #2b2b2b;
+
+// ссылки:
+$underscore-main: #49cbf4;
+$underscore-gradient: linear-gradient( to right, #49cbf4, #49cbf4), linear-gradient( to right,#d12cb2,#e6aadb,#678ff2);
+
+// кнопки:
+$white-button: #ffffff49;
+$hover-gradient-white: linear-gradient( to right, #ffffff49, #ffffff49), linear-gradient( to right,#e6aadb, #d12cb2,#678ff2);
+$hover-gradient-active: linear-gradient( to right,#e6aadb, #d12cb2,#678ff2);
+$image-button: #ffffff29;
+$hover-gradient-image-button: linear-gradient( to right, #ffffff29, #ffffff29), linear-gradient( to right,#e6aadb, #d12cb2,#678ff2);

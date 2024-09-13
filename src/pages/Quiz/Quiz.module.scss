@@ -1,0 +1,78 @@
+@import '../../styles/variables';
+
+
+.container {
+    margin: 0;
+    width: 100%;
+    background: $main-background;
+
+    .quizСontent {
+        padding: 30px;
+        background-image: url('../../assets/ellipse.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        .topicTitle {
+            margin: 30px 0;
+            padding: 0;
+            text-align: center;
+            font-family: $accent-font;
+            font-size: 50px;
+            color: $accent-font-color-pink;
+            text-shadow: 3px 5px #31142b6f;
+        }
+    
+        .rules {
+            padding: 30px;
+            background: $blur-effect-blue;
+            backdrop-filter: blur(4px);
+            box-shadow: 0 4px 30px #0000003f;
+            border-radius: 25px;
+            z-index: 2;
+    
+            .rulesTitle {
+                margin: 0;
+                padding: 10px 0;
+                text-align: center;
+                font-family: $main-font;
+                font-size: 35px;
+                color: $secondary-font-color;
+            }
+    
+            .rulesText {
+                margin: 0;
+                padding: 30px 20px;
+                font-family: $main-font;
+                font-size: 23px;
+                line-height: 120%;
+                color: $main-font-color;
+
+            }
+
+            @import '../../styles/buttons';
+            .whiteButton {
+                margin-bottom: 25px;
+                padding: 10px 40px;
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    .imageOne {
+        position: absolute;
+        left: 5%;
+        top: 10%;
+        transform: scale(-1, 1) rotate(-1deg);
+    }
+
+    .imageTwo {
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        transform: scale(-1, 1) rotate(-15deg);
+    }
+}

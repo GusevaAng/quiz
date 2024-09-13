@@ -1,0 +1,36 @@
+@import '../../../styles/variables';
+
+.container {
+    margin: 100px 60px ;
+
+    .sectionTitle {
+        text-align: center;
+        font-family: $accent-font;
+        font-size: 35px;
+        color: $accent-font-color-pink;
+    }
+
+    .buttonGroup {
+        margin: 40px;
+        display: flex;
+        gap: 50px;
+        align-content: center;
+        justify-content: center;
+
+        @import '../../../styles/buttons';
+        .whiteButton {
+            padding: 10px 30px;
+        }
+
+        .activeButton {
+            padding: 10px 30px;
+        }
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 400px);
+        gap: 60px;
+    }
+}
+

@@ -1,0 +1,17 @@
+@import '../../../../styles/variables';
+
+
+.container {
+    padding: 10px;
+
+    .answersList {
+        list-style-position: inside;
+
+        .answer {
+            text-align: center;
+            font-family: $main-font;
+            font-size: 45px;
+            color: $main-font-color;
+        }
+    }
+}

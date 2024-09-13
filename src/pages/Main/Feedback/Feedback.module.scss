@@ -1,0 +1,17 @@
+@import '../../../styles/variables';
+
+
+.container {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background-image: url('../../../assets/footer.png');
+
+    .sectionTitle {
+        padding-top: 60px;
+        text-align: center;
+        font-family: $accent-font;
+        font-size: 28px;
+        color: $main-font-color;   
+    }
+
+}
