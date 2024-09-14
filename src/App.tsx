@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route 
-            path='/main'
+            path='/quiz/main'
             element={ <Main /> }
           />
           <Route 
