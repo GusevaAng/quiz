@@ -11,10 +11,10 @@ function App() {
   return (
     <div className={styles.container}>
       {/* <BrowserRouter basename='/quiz'> */}
-      <HashRouter basename='/quiz'>
+      <HashRouter>
         <Routes>
           <Route 
-            path='/'
+            path='/main'
             element={ <Main /> }
           />
           <Route 
