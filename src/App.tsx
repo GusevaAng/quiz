@@ -10,8 +10,8 @@ import FinishQuiz from './pages/Quiz/FinishQuiz/FinishQuiz'
 function App() {
   return (
     <div className={styles.container}>
-      <BrowserRouter basename='/quiz'>
-      {/* <HashRouter> */}
+      {/* <BrowserRouter basename='/quiz'> */}
+      <HashRouter basename='/quiz'>
         <Routes>
           <Route 
             path='/'
@@ -34,9 +34,9 @@ function App() {
             element={ <FinishQuiz />}
           />
         </Routes>
-      </BrowserRouter>
+      {/* </BrowserRouter> */}
 
-      {/* </HashRouter> */}
+      </HashRouter>
     </div>
   )
 }
