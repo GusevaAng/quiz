@@ -14,7 +14,7 @@ function App() {
       {/* <HashRouter> */}
         <Routes>
           <Route 
-            path='/quiz/main'
+            path='/'
             element={ <Main /> }
           />
           <Route 
