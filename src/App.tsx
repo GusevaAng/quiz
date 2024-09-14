@@ -1,5 +1,5 @@
 import styles from './App.module.scss'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, HashRouter, createHashRouter } from 'react-router-dom'
 import Main from './pages/Main/Main'
 import Quiz from './pages/Quiz/Quiz'
 import Round from './pages/Quiz/Round/Round'
@@ -11,6 +11,7 @@ function App() {
   return (
     <div className={styles.container}>
       <BrowserRouter>
+      {/* <HashRouter> */}
         <Routes>
           <Route 
             path='/quiz/main'
@@ -34,6 +35,8 @@ function App() {
           />
         </Routes>
       </BrowserRouter>
+
+      {/* </HashRouter> */}
     </div>
   )
 }
