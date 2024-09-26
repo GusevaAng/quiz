@@ -1,24 +1,52 @@
 @import '../../../styles/variables';
 
 
-.container {
-    padding: 10px;
+@media (orientation: landscape) {
 
-    .question {
-        text-align: center;
-        font-family: $main-font;
-        font-size: 53px;
-        color: $quiz-text-color;
+    .container {
+        padding: 10px;
+    
+        .question {
+            text-align: center;
+            font-family: $main-font;
+            font-size: 53px;
+            color: $quiz-text-color;
+        }
+    
+        .timer {
+            position: absolute;
+            bottom: 8%;
+            left: 2%;
+            right: 2%;
+            text-align: center;
+            font-family: $accent-font;
+            font-size: 18px;
+            color: $accent-font-color-pink;
+        }
     }
+}
 
-    .timer {
-        position: absolute;
-        bottom: 8%;
-        left: 2%;
-        right: 2%;
-        text-align: center;
-        font-family: $accent-font;
-        font-size: 18px;
-        color: $accent-font-color-pink;
+@media (orientation: portrait) {
+
+    .container {
+        padding: 5px;
+    
+        .question {
+            text-align: center;
+            font-family: $main-font;
+            font-size: 2rem;
+            color: $quiz-text-color;
+        }
+    
+        .timer {
+            position: absolute;
+            bottom: 8%;
+            left: 2%;
+            right: 2%;
+            text-align: center;
+            font-family: $accent-font;
+            font-size: 18px;
+            color: $accent-font-color-pink;
+        }
     }
 }

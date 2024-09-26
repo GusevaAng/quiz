@@ -1,64 +1,140 @@
 @import '../../../styles/variables';
 
-.container {
-    margin: 30px 60px;
-    display: grid;
-    grid-template-columns: repeat(2, 620px);
-    grid-template-rows: repeat(2, 300px);
-    gap: 60px;
-    justify-content: space-between;
-    align-items: stretch;
 
+@media (orientation: landscape) {
 
-    .card {
-        padding: 40px;
-        background: $blur-effect-blue;
-        backdrop-filter: blur(7px);
-        box-shadow: 0 4px 30px #ffffff2b;
-        border-radius: 25px;
-        z-index: 2;
-
-        .title {
-            margin: 25px 0;
-            font-family: $accent-font;
-            font-size: 26px;
-            line-height: 110%;
-            color: $main-font-color;
+    .container {
+        margin: 30px 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: repeat(2, 300px);
+        gap: 60px;
+        justify-content: space-between;
+        align-items: stretch;
+    
+        .card {
+            padding: 40px;
+            background: $blur-effect-blue;
+            backdrop-filter: blur(7px);
+            box-shadow: 0 4px 30px #ffffff2b;
+            border-radius: 25px;
+            z-index: 5;
+    
+            .title {
+                margin: 25px 0;
+                font-family: $accent-font;
+                font-size: 26px;
+                line-height: 110%;
+                color: $main-font-color;
+            }
+    
+            .description {
+                margin: 15px 0;
+                width: 420px;
+                font-family: $main-font;
+                font-size: 20px;
+                line-height: 105%;
+                color: $secondary-font-color;
+            }
+    
+            .imageOne {
+                position: absolute;
+                left: 64%;
+                top: 30%;
+                transform: scale(-1, 1) rotate(20deg);
+                z-index: 1;
+            }
+    
+            .imageTwo {
+                position: absolute;
+                left: 70%;
+                top: 13%;
+                z-index: 1;
+                height: 80%;
+            }
+    
+            .imageThree {
+                position: absolute;
+                left: 70%;
+                top: 40%;
+                z-index: 1;
+            }
+    
+            .imageFour {
+                position: absolute;
+                left: 64%;
+                top: 30%;
+                transform: scale(-1, 1) rotate(-15deg);
+                z-index: 1;
+            }
         }
+    }
+}
 
-        .description {
-            margin: 15px 0;
-            width: 420px;
-            font-family: $main-font;
-            font-size: 20px;
-            line-height: 105%;
-            color: $secondary-font-color;
-        }
+@media (orientation: portrait) {
 
-        .imageOne {
-            position: absolute;
-            left: 64%;
-            top: 30%;
-            transform: scale(-1, 1) rotate(20deg);
-        }
-
-        .imageTwo {
-            position: absolute;
-            left: 60%;
-            top: 13%;
-        }
-
-        .imageThree {
-            position: absolute;
-            left: 70%;
-            top: 40%;
-        }
-
-        .imageFour {
-            position: absolute;
-            left: 64%;
-            top: 30%;
-            transform: scale(-1, 1) rotate(-15deg);
+    .container {
+        margin: 10px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: stretch;
+    
+        .card {
+            padding: 20px;
+            background: $blur-effect-blue;
+            backdrop-filter: blur(7px);
+            box-shadow: 0 4px 20px #ffffff2b;
+            border-radius: 20px;
+            z-index: 10;
+    
+            .title {
+                margin: 20px 0;
+                font-family: $accent-font;
+                font-size: 18px;
+                line-height: 110%;
+                color: $main-font-color;
+            }
+    
+            .description {
+                margin: 15px 0;
+                width: 88%;
+                font-family: $main-font;
+                font-size: 16px;
+                line-height: 105%;
+                color: $secondary-font-color;
+            }
+    
+            .imageOne {
+                position: absolute;
+                right: 1%;
+                top: 0%;
+                transform: scale(-1, 1) rotate(20deg);
+                height: 50%;
+            }
+    
+            .imageTwo {
+                position: absolute;
+                right: 1%;
+                bottom: 2%;
+                height: 34%;
+            }
+    
+            .imageThree {
+                position: absolute;
+                right: 0%;
+                top: 0%;
+                height: 36%;
+            }
+    
+            .imageFour {
+                position: absolute;
+                right: 0%;
+                bottom: 0%;
+                transform: scale(-1, 1) rotate(-15deg);
+                height: 40%;
+            }
         }
     }
 }

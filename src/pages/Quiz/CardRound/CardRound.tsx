@@ -10,7 +10,6 @@ interface ICardRound {
 }
 
 const CardRound: React.FC<ICardRound> = ({ question, timer, maxTimer }) => {
-    
     return (
         <div className={styles.container}>
             <p className={styles.question}> {question} </p>
@@ -21,7 +20,6 @@ const CardRound: React.FC<ICardRound> = ({ question, timer, maxTimer }) => {
                     maxTimer={maxTimer}
                 />
             </div>
-            
         </div>
     )
 }

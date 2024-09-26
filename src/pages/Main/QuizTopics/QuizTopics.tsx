@@ -51,7 +51,6 @@ const QuizTopics: React.FC = () => {
             <div className={styles.cards}>
                 {topicCards}
             </div>
-           
         </div>
     )
 }

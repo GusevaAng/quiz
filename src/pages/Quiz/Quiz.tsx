@@ -25,8 +25,6 @@ const Quiz: React.FC = () => {
     const navigate = useNavigate()
 
     const handleStartQuiz = () => {
-        // navigate(`/quiz/${currentTopic?.topic_id}/round?number=1`)
-
         navigate(`/quiz/${currentTopic?.topic_id}/round?roundNumber=1`)
     }
 

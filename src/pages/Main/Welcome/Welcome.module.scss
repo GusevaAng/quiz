@@ -1,72 +1,146 @@
 @import '../../../styles/variables';
 
-.container {
-    padding-top: 100px;
-    height: 320px;
-    background: $glare-pink;
 
-    .main {
-        padding-top: 50px;
-        padding-left: 60px;
-        position: absolute;
-        width: 550px;
-        z-index: 100;
-        
-        .mainTitle {
-            margin: 0;
-            margin-bottom: 20px;
-            font-family: $accent-font;
-            font-size: 64px;
-            color: $main-font-color;
-            line-height: 100%;
+@media (orientation: landscape) {
+    
+    .container {
+        padding-top: 100px;
+        height: 320px;
+        background: $glare-pink;
+    
+        .main {
+            padding-top: 50px;
+            padding-left: 60px;
+            position: absolute;
+            width: 550px;
             z-index: 100;
-
-            span {
-                color: $accent-font-color-blue;
+            
+            .mainTitle {
+                margin: 0;
+                margin-bottom: 20px;
+                font-family: $accent-font;
+                font-size: 64px;
+                color: $main-font-color;
+                line-height: 100%;
+                z-index: 100;
+    
+                span {
+                    color: $accent-font-color-blue;
+                }
+            }
+    
+            .mainDescription {
+                margin: 0;
+                margin-bottom: 20px;
+                font-family: $main-font;
+                font-size: 20px;
+                color: $secondary-font-color;
+                line-height: 110%;
+                z-index: 100;
             }
         }
-
-        .mainDescription {
+    
+        .images {
             margin: 0;
-            margin-bottom: 20px;
-            font-family: $main-font;
-            font-size: 20px;
-            color: $secondary-font-color;
-            line-height: 110%;
-            z-index: 100;
-        }
-
-    }
-
-    .images {
-        margin: 0;
-        padding: 0;
-
-
-        .imgPlanet {
-            position: absolute;
-            right: 0%;
-            top: 22%;
-            max-width: 800px;
-            background: $glare-blue;
-            z-index: 1;
-        }
-
-        .imgGhostBlue {
-            position: absolute;
-            right: 0%;
-            top: 15%;
-            max-width: 180px;
-            z-index: 5;
-        }
-
-        .imgGhostYellow {
-            position: absolute;
-            left: 0%;
-            top: 50%;
-            max-width: 100px;
-            z-index: 5;
+            padding: 0;
+    
+            .imgPlanet {
+                position: absolute;
+                right: 0%;
+                top: 22%;
+                max-width: 800px;
+                background: $glare-blue;
+                z-index: 1;
+            }
+    
+            .imgGhostBlue {
+                position: absolute;
+                right: 0%;
+                top: 15%;
+                max-width: 180px;
+                z-index: 5;
+            }
+    
+            .imgGhostYellow {
+                position: absolute;
+                left: 0%;
+                top: 50%;
+                max-width: 100px;
+                z-index: 5;
+            }
         }
     }
-
 }
+
+@media (orientation: portrait) {
+
+    .container {
+        padding-top: 80px;
+        height: 270px;
+        background: $glare-pink;
+    
+        .main {
+            padding-top: 40px;
+            padding-left: 40px;
+            position: absolute;
+            z-index: 100;
+            
+            .mainTitle {
+                margin: 0;
+                margin-bottom: 20px;
+                width: 80%;
+                font-family: $accent-font;
+                font-size: 30px;
+                color: $main-font-color;
+                line-height: 100%;
+                z-index: 100;
+    
+                span {
+                    color: $accent-font-color-blue;
+                }
+            }
+    
+            .mainDescription {
+                margin: 0;
+                margin-bottom: 20px;
+                width: 80%;
+                font-family: $main-font;
+                font-size: 16px;
+                color: $secondary-font-color;
+                line-height: 110%;
+                z-index: 100;
+            }
+        }
+    
+        .images {
+            margin: 0;
+            padding: 0;
+    
+            .imgPlanet {
+                width: 50%;
+                position: absolute;
+                right: 0%;
+                top: 12%;
+                background: $glare-blue;
+                z-index: 1;
+            }
+    
+            .imgGhostBlue {
+                position: absolute;
+                width: 15%;
+                right: 0%;
+                top: 15%;
+                z-index: 5;
+            }
+    
+            .imgGhostYellow {
+                position: absolute;
+                width: 10%;
+                left: 0%;
+                top: 26%;
+                z-index: 5;
+            }
+        }
+    }
+}
+

@@ -2,36 +2,78 @@
 @import '../../../../styles/buttons';
 
 
-.card {
-    padding: 30px;
-    background: $blur-effect-pink;
-    backdrop-filter: blur(7px);
-    box-shadow: 0 4px 30px #ffffff2b;
-    border-radius: 5px;
+@media (orientation: landscape) {
 
-    .title {
-        margin: 10px 0;
-        font-family: $accent-font;
-        font-size: 22px;
-        line-height: 120%;
-        color: $main-font-color;
+    .card {
+        padding: 30px;
+        background: $blur-effect-pink;
+        backdrop-filter: blur(7px);
+        box-shadow: 0 4px 30px #ffffff2b;
+        border-radius: 5px;
+    
+        .title {
+            margin: 10px 0;
+            font-family: $accent-font;
+            font-size: 22px;
+            line-height: 120%;
+            color: $main-font-color;
+        }
+    
+        .description {
+            margin-bottom: 30px;
+            font-family: $main-font;
+            font-size: 18px;
+            line-height: 120%;
+            color: $secondary-font-color;
+        }
+    
+        .whiteButton {
+            margin: 10px 0;
+            width: 50%;
+            height: 10%;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
+}
 
-    .description {
-        margin-bottom: 30px;
-        font-family: $main-font;
-        font-size: 18px;
-        line-height: 120%;
-        color: $secondary-font-color;
-    }
-
-    .whiteButton {
-        margin: 10px 0;
-        width: 50%;
-        height: 10%;
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
+@media (orientation: portrait) {
+    
+    .card {
+        padding: 30px;
+        background: $blur-effect-pink;
+        backdrop-filter: blur(7px);
+        box-shadow: 0 4px 30px #ffffff2b;
+        border-radius: 15px;
+    
+        .title {
+            margin: 10px 0;
+            font-family: $accent-font;
+            font-size: 22px;
+            line-height: 120%;
+            text-align: center;
+            color: $main-font-color;
+        }
+    
+        .description {
+            margin-bottom: 30px;
+            font-family: $main-font;
+            font-size: 18px;
+            line-height: 120%;
+            text-align: center;
+            color: $secondary-font-color;
+        }
+    
+        .whiteButton {
+            margin: 10px 0;
+            width: 50%;
+            height: 10%;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }

@@ -1,7 +1,7 @@
 import React from 'react' 
 import styles from './CardTopic.module.scss'
 import { ITopics } from '../../../../data/mock-data-topics'
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router'
 
 
 interface ICardTopic {

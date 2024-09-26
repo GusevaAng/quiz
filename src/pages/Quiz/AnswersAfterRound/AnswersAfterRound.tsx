@@ -38,25 +38,18 @@ const AnswersAfterRound: React.FC = () => {
             setShowAnswers(true)
         } else {
             if (nextRound < 5) {
-                // navigate(`/quiz/${topic_id}/round?number=${nextRound}`)
-
                 navigate(`/quiz/${topic_id}/round?roundNumber=${nextRound}`)
             } else {
                 navigate('/quiz/finish')
             }
-            
         }
     }
-
-
-
 
     return (
         <div className={styles.container}>
             <div className={styles.answersContent}>
                 <h5 className={styles.header}> Проверим ответы? </h5>
                 <button onClick={handleButtonAnswers} className={styles.whiteButton}>  
-                    {/* {showAnswers ? 'Следующий раунд!' : 'Показать ответы'} */}
                     {!showAnswers ? 'Показать ответы' : nextRound < 4 ? 'Следующий раунд!' : 'Завершить игру!'}
                 </button>
                 {showAnswers && (

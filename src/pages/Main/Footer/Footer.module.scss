@@ -1,19 +1,42 @@
 @import '../../../styles/variables';
 
-.container {
-    margin: 0;
-    padding: 0;
-    height: 60px;
-    background: $footer-background;
 
-    .footerText {
+@media (orientation: landscape) {
+
+    .container {
         margin: 0;
-        padding-top: 20px;
-        font-family: $main-font;
-        font-size: 14px;
-        color: $secondary-font-color;
-        text-align: center;
+        padding: 0;
+        height: 60px;
+        width: 100%;
+        background: $footer-background;
+    
+        .footerText {
+            margin: 0;
+            padding-top: 20px;
+            font-family: $main-font;
+            font-size: 14px;
+            color: $secondary-font-color;
+            text-align: center;
+        }
     }
+}
 
+@media (orientation: portrait) {
 
+    .container {
+        margin: 0;
+        padding: 0;
+        height: 60px;
+        width: 100%;
+        background: $footer-background;
+    
+        .footerText {
+            margin: 0 20px;
+            padding-top: 10px;
+            font-family: $main-font;
+            font-size: 14px;
+            color: $secondary-font-color;
+            text-align: center;
+        }
+    }
 }

@@ -4,7 +4,7 @@ import FeedbackForm from './FeedbackForm/FeedbackForm'
 
 const Feedback: React.FC = () => {
 
-    // @TODO имитация отправки обратной связи
+    // имитация отправки обратной связи
     const handleSubmit = (email: string, feedback: string) => {
         console.log('Отзыв успешно отправлен:  ', {email, feedback})
     }

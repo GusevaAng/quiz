@@ -43,6 +43,5 @@ export const ScrollProvider = ({ children }: IProps) => {
             {children}
         </ScrollContext.Provider>
     )
-
 }
 
