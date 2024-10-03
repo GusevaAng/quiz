@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import styles from './Header.module.scss'
 import logoWhite from '../../../assets/logo-white.png'
 import { Link } from 'react-scroll'
-import { ScrollContext } from '../../../store/ScrollContext'
+import { ScrollContext } from './ScrollContext'
 
 
 const Header = (): JSX.Element => {

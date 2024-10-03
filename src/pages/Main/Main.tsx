@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Main.module.scss'
 import Header from './Header/Header'
-import { ScrollProvider } from '../../store/ScrollContext'
+import { ScrollProvider } from './Header/ScrollContext'
 import Welcome from './Welcome/Welcome'
 import Rules from './Rules/Rules'
 import QuizTopics from './QuizTopics/QuizTopics'
